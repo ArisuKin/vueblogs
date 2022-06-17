@@ -1,1 +1,16 @@
 
+# 数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///vue_blog
+    username: devroot
+    password: ''
+
+# 映射文件路径
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+
+# 服务端口
+server:
+  port: 8081
